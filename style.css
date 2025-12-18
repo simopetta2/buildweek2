@@ -22,30 +22,40 @@
     background-size: cover;
     background-image: url(assets/1.webp);
     border-radius: 20px 0 0 20px;
+    box-shadow: 0px 0px 5px black;
+
 }
 
 .prova1 .img-2 {
     background-position: center;
     background-size: cover;
     background-image: url(assets/2.webp);
-   
+    box-shadow: 0px 0px 5px black
+}
+
+@media (max-width: 767.98px) {
+    .image {
+
+        border-radius: 20px !important;
+    }
+
 
 }
+
 
 .prova1 .img-3 {
     background-position: center;
     background-size: cover;
     background-image: url(assets/3.webp);
     border-radius: 0 20px 0 0;
-
+    box-shadow: 0px 0px 5px black
 }
 
 .prova1 .img-4 {
     background-position: bottom;
     background-size: cover;
     background-image: url(assets/4.webp);
-
-
+    box-shadow: 0px 0px 5px black
 }
 
 .prova1 .img-5 {
@@ -53,17 +63,19 @@
     background-size: cover;
     background-image: url(assets/5.webp);
     border-radius: 0 0 20px 0;
-
-
+    box-shadow: 0px 0px 5px black
 }
 
 .images-container {
     overflow: hidden;
     min-height: 600px;
-cursor: pointer;
+    cursor: pointer;
 }
-.images-container .image:hover{
+
+.images-container .image:hover {
     transform: scale(1.01);
+    transition: 0.5s;
+    box-shadow: 0px 4px 5px black
 }
 
 .icon i {
@@ -73,4 +85,60 @@ cursor: pointer;
 .title-post span {
     font-weight: bold;
     color: #7C838B;
+}
+
+.card-container {
+    position: relative;
+    top: 10%;
+    left: 80%;
+    height: 37%;
+    border-radius: 5%;
+    box-shadow: 7px 7px 20px 4px #afafaf;
+}
+
+@media (max-width: 767.98px) {
+    .card-container {
+        left: 0;
+        top: 0;
+        border: solid 1px black;
+        box-shadow: none;
+
+    }
+
+
+}
+
+.button-cancel {
+    background-color: #FF385C;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button-cancel:hover {
+    background-color: #f1123b;
+
+}
+
+.date-container :first-child {
+    border-radius: 15px 0 0 0;
+    border: solid 1px;
+}
+
+.date-container :last-child {
+    border-radius: 0 15px 0 0;
+    border: solid 1px;
+}
+
+.guest {
+    border-radius: 0 0 15px 15px;
+    border: solid 1px;
+}
+
+.button-cancel p {
+    color: white;
+}
+
+.date-reviews img {
+    width: 13px;
 }
